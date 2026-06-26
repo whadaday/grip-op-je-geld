@@ -455,7 +455,7 @@ document.addEventListener('DOMContentLoaded', function () {
             doc.setFont('helvetica', 'normal');
             doc.setFontSize(8);
             doc.setTextColor(160, 160, 160);
-            doc.text('Begrotingstool — Diversion / gemeente Nijmegen', margin, 290);
+            doc.text('Grip op je geld', margin, 290);
             if (pageCount > 1) {
                 doc.text('Pagina ' + p + ' van ' + pageCount, pageW - margin, 290, { align: 'right' });
             }

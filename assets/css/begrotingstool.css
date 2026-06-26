@@ -61,7 +61,7 @@
 
 .bt-intro {
     max-width: 680px;
-    margin: 0 auto 4rem;
+    margin: 0 auto;
     padding: 0 1.5rem;
     text-align: center;
     float: none;
@@ -78,6 +78,7 @@
     background: #fff;
     border-radius: 0.5rem;
     padding: 1.5rem;
+    margin-top: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -190,6 +191,8 @@
     font-size: 0.875rem;
     color: #555;
     margin: 0 0 0.5rem;
+    height: 1.5rem;
+    display: block;
 }
 
 .bt-progress__track {
@@ -246,7 +249,7 @@
     cursor: pointer;
     font-weight: 700;
     font-family: inherit;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     border-radius: 2rem;
     padding: 0 1.5rem;
     height: 3rem;
@@ -254,6 +257,7 @@
     align-items: center;
     justify-content: center;
     background-color: #157c68;
+    text-transform: none;
     color: #fff;
     border: 0;
     box-shadow: none;
@@ -266,8 +270,9 @@
     border: 1px solid #157c68;
     color: #157c68;
 }
-.bt-btn--prev:hover {
-    color: #157c68;
+.bt-btn--prev:hover,
+.bt-btn--prev:focus {
+    color: #157c68 !important;
 }
 
 .bt-btn:hover {
@@ -328,13 +333,14 @@
     font-size: 1rem;
     font-family: inherit;
     color: inherit;
-    max-height: auto;
+    max-height: 100%;
 }
 
 .bt-input-wrap input[type="text"]:focus,
 .bt-input-wrap input[type="text"]:focus-visible {
-    outline: 1px solid #157c68 !important;
+    outline: 0.5px solid #157c68 !important;
     border-color: #157c68 !important;
+    outline-offset: 0 !important;
 }
 
 /* Info-knop naast het label */
