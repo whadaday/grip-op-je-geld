@@ -1,0 +1,701 @@
+/* ==========================================================================
+   Begrotingstool — plugin styles
+   ========================================================================== */
+
+/* ── Hulpklassen ───────────────────────────────────────────────────────── */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ── Wrapper ────────────────────────────────────────────────────────────── */
+
+.bt-wrap {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #121212;
+    background-image: url('../img/background.svg');
+    background-position: top center;
+    background-attachment: fixed;
+    padding: 4rem 0 0;
+    min-height: 100dvh;
+}
+
+/* ── Introductie ────────────────────────────────────────────────────────── */
+
+.bt-intro {
+    max-width: 680px;
+    margin: 0 auto 4rem;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.bt-logo {
+    display: block;
+    margin: 0 auto 2rem;
+    width: 250px;
+    height: auto;
+}
+
+.bt-intro__card {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .bt-intro__card { padding: 3rem; }
+}
+
+.bt-intro h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 1rem;
+    color: #121212;
+}
+
+@media (min-width: 768px) {
+    .bt-intro h1 { font-size: 2.5rem; }
+}
+
+.bt-intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #121212;
+    margin: 0;
+}
+
+.bt-intro__action {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.bt-intro__more {
+    font-size: 0.875rem;
+}
+
+.bt-intro__more a {
+    color: #121212;
+    text-decoration: underline;
+}
+
+.bt-intro__more a:hover {
+    text-decoration: none;
+}
+
+/* ── Typografie — site-onafhankelijk ────────────────────────────────────── */
+
+.bt-wrap h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 0.75rem;
+    color: #121212;
+}
+
+.bt-wrap h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 1rem 0 0.5rem;
+    color: #121212;
+}
+
+.bt-step__content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin: 0.75rem 0;
+    color: #121212;
+    text-wrap: balance;
+}
+
+.bt-step__content p:first-of-type {
+    margin-top: 0;
+}
+
+.bt-wrap b,
+.bt-wrap strong {
+    font-weight: 700;
+}
+
+.bt-wrap i,
+.bt-wrap em {
+    font-style: italic;
+}
+
+.bt-wrap a {
+    color: #157c68;
+    text-decoration: underline;
+}
+
+.bt-wrap a:hover {
+    text-decoration: none;
+}
+
+/* ── Formulier (verborgen via hidden-attribuut in HTML) ─────────────────── */
+
+#bt-form {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+}
+
+/* ── Voortgangsbalk ─────────────────────────────────────────────────────── */
+
+.bt-progress {
+    padding: 0;
+}
+
+.bt-progress__label {
+    font-size: 0.875rem;
+    color: #555;
+    margin: 0 0 0.5rem;
+}
+
+.bt-progress__track {
+    height: 20px;
+    background: #fff;
+    border-radius: 0.5rem 0.5rem 0 0;
+    overflow: hidden;
+}
+
+.bt-progress__bar {
+    height: 100%;
+    background: #157c68;
+    transition: width 0.3s ease;
+}
+
+/* ── Stappen ────────────────────────────────────────────────────────────── */
+
+.bt-step {
+    background: #fff;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.bt-step__content {
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .bt-progress { padding: 0; }
+    .bt-step__content { padding: 3rem; }
+}
+
+/* ── Navigatie ──────────────────────────────────────────────────────────── */
+
+.bt-nav {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.bt-nav__inner {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .bt-nav { padding: 0 3rem 3rem; }
+    .bt-nav__inner { padding: 0; }
+}
+
+/* ── Knoppen ────────────────────────────────────────────────────────────── */
+
+.bt-btn {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 0 1.5rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #157c68;
+    color: #fff;
+    border: 0;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease;
+    white-space: nowrap;
+}
+
+.bt-btn--prev {
+    background-color: #fff;
+    border: 1px solid #157c68;
+    color: #157c68;
+}
+
+.bt-btn:hover {
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.24);
+}
+
+.bt-btn:focus-visible {
+    outline: 3px solid #157c68;
+    outline-offset: 2px;
+}
+
+/* ── Formuliervelden ────────────────────────────────────────────────────── */
+
+.bt-field {
+    padding: 0;
+    margin: 0.75rem 0;
+}
+
+.bt-label-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.375rem;
+}
+
+.bt-label {
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: block;
+}
+
+.bt-input-wrap {
+    position: relative;
+    max-width: 400px;
+}
+
+.bt-euro {
+    position: absolute;
+    left: 0.75rem;
+    bottom: 50%;
+    transform: translateY(50%);
+    line-height: 1;
+    opacity: 0.6;
+    color: #157c68;
+    font-size: 1.25rem;
+    pointer-events: none;
+}
+
+.bt-input-wrap input[type="text"] {
+    height: 3.25rem;
+    width: 100%;
+    border: 1.5px solid #ccc;
+    border-radius: 0.25rem;
+    background: #fff;
+    padding-left: 2rem;
+    padding-right: 0.75rem;
+    font-size: 1.125rem;
+    font-family: inherit;
+    color: inherit;
+}
+
+.bt-input-wrap input[type="text"]:focus,
+.bt-input-wrap input[type="text"]:focus-visible {
+    outline: 1px solid #157c68;
+    border-color: #157c68;
+}
+
+/* Info-knop naast het label */
+
+.bt-info-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: inherit;
+}
+
+.bt-info-btn:hover {
+    background: #005a87;
+}
+
+.bt-info-btn:focus-visible {
+    outline: 2px solid #0073aa;
+    outline-offset: 2px;
+}
+
+/* Beschrijving is alleen zichtbaar in de lightbox */
+.bt-field-description {
+    display: none;
+}
+
+/* ── Lightbox ───────────────────────────────────────────────────────────── */
+
+.bt-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt-lightbox.is-active {
+    display: flex;
+}
+
+.bt-lightbox-content {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.bt-lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    line-height: 1;
+    font-family: inherit;
+}
+
+.bt-lightbox-close:hover { color: #000; }
+
+.bt-lightbox-body {
+    line-height: 1.6;
+}
+
+.bt-lightbox-body a {
+    color: #157c68;
+    text-decoration: underline;
+}
+
+.bt-lightbox-body a:hover {
+    text-decoration: none;
+}
+
+.bt-lightbox-body h2,
+.bt-lightbox-body h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 0.75rem;
+    color: #121212;
+}
+
+.bt-lightbox-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 0.75rem;
+    color: #444;
+}
+
+.bt-lightbox-body p:last-child {
+    margin-bottom: 0;
+}
+
+.bt-lightbox-body b,
+.bt-lightbox-body strong {
+    font-weight: 700;
+}
+
+.bt-lightbox-body i,
+.bt-lightbox-body em {
+    font-style: italic;
+}
+
+/* ── Budget-samenvatting ────────────────────────────────────────────────── */
+
+#budget-summary {
+    margin: 1.5rem 0 2rem;
+    color: #222;
+}
+
+#budget-summary .dashboard-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#budget-summary .saldo-box {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+}
+
+#budget-summary .total {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+#budget-summary .sublabel {
+    font-size: 1.25rem;
+}
+
+#budget-summary .result-positive,
+#budget-summary .result-negative {
+    max-width: 460px;
+    margin: 1.5rem auto 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#budget-summary .dashboard-table {
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+/* Budget-tabel */
+
+.budget-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: #222;
+}
+
+.budget-table th,
+.budget-table td {
+    padding: 0.6rem 1.25rem;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: top;
+    text-align: left;
+    font-weight: inherit;
+}
+
+.budget-table caption { text-align: left; }
+
+.budget-table .budget-line__amount {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.budget-table .budget-line--empty td {
+    color: #888;
+    font-style: italic;
+}
+
+.budget-table .budget-section th,
+.budget-table .budget-section td {
+    background: #157c68;
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 0;
+}
+
+.budget-table .budget-subtotal th,
+.budget-table .budget-subtotal td {
+    font-weight: 700;
+    border-bottom: 2px solid #dddddd;
+}
+
+.budget-table .budget-saldo th,
+.budget-table .budget-saldo td {
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-bottom: 0;
+}
+
+.budget-table .budget-saldo.is-positive th,
+.budget-table .budget-saldo.is-positive td { color: #157c68; }
+
+.budget-table .budget-saldo.is-negative th,
+.budget-table .budget-saldo.is-negative td { color: #c62828; }
+
+/* Download-knop */
+
+#budget-summary .budget-download {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.budget-download__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    background: #157c68;
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    font-family: inherit;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.budget-download__btn:hover,
+.budget-download__btn:focus-visible {
+    background: #0e5a4c;
+    outline: 3px solid #0e5a4c;
+    outline-offset: 2px;
+}
+
+.budget-download__btn:active { transform: scale(0.98); }
+
+/* ── Resultaat-afhankelijke content ─────────────────────────────────────── */
+
+.result-positive,
+.result-negative,
+.accordion--positief,
+.accordion--negatief {
+    display: none;
+}
+
+body.budget-empty #budget-summary .dashboard-header,
+body.budget-empty #budget-summary .budget-download {
+    display: none;
+}
+
+body.saldo-positief #budget-summary .saldo-box {
+    background: #eafaf1;
+    color: #157c68;
+}
+
+body.saldo-positief .result-positive,
+body.saldo-positief .accordion--positief {
+    display: block;
+}
+
+body.saldo-negatief #budget-summary .saldo-box {
+    background: #fdecea;
+    color: #c62828;
+}
+
+body.saldo-negatief .result-negative,
+body.saldo-negatief .accordion--negatief {
+    display: block;
+}
+
+/* ── Accordion ──────────────────────────────────────────────────────────── */
+
+.accordion {
+    margin: 3rem 0 2rem;
+}
+
+h3.accordion-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: #121212;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #eee;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: left;
+    color: #000;
+    background: none;
+    border: 0;
+    appearance: none;
+}
+
+.accordion-header:hover {
+    color: #157c68;
+}
+
+.accordion-header[aria-expanded="true"] {
+    color: #157c68;
+}
+
+.accordion-header[aria-expanded="true"] .accordion-icon {
+    transform: rotate(45deg);
+}
+
+/* Plus/kruis-icoon via pseudo-elementen */
+
+.accordion-icon {
+    position: relative;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    margin-left: 1rem;
+    font-size: 0;
+    transition: transform 0.2s ease;
+    transform-origin: center;
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: currentColor;
+    border-radius: 1px;
+}
+
+.accordion-icon::before {
+    width: 0.875rem;
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-icon::after {
+    width: 2px;
+    height: 0.875rem;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-content {
+    display: none;
+    padding-bottom: 1rem;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+.accordion-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+}
+
+.accordion-content a {
+    color: #157c68;
+    text-decoration: underline;
+}
+
+.accordion-content a:hover {
+    text-decoration: none;
+}
