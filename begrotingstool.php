@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Grip op je geld
  * Description: Interactieve budgettool voor jongeren — gebruik [begrotingstool] als shortcode.
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      Angelo Vaudo
  * License:     GPL-2.0-or-later
  * Text Domain: grip-op-je-geld
@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'GOGJ_VERSION', '1.0.1' );
+define( 'GOGJ_VERSION', '1.0.2' );
 define( 'GOGJ_DIR',     plugin_dir_path( __FILE__ ) );
 define( 'GOGJ_URL',     plugin_dir_url( __FILE__ ) );
 

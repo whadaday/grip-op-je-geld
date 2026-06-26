@@ -142,7 +142,7 @@
 }
 
 .bt-step__content p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.6;
     margin: 0.75rem 0;
     color: #121212;
@@ -246,7 +246,7 @@
     cursor: pointer;
     font-weight: 700;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 0.75rem;
     border-radius: 2rem;
     padding: 0 1.5rem;
     height: 3rem;
@@ -264,6 +264,9 @@
 .bt-btn--prev {
     background-color: #fff;
     border: 1px solid #157c68;
+    color: #157c68;
+}
+.bt-btn--prev:hover {
     color: #157c68;
 }
 
@@ -309,8 +312,9 @@
     line-height: 1;
     opacity: 0.6;
     color: #157c68;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     pointer-events: none;
+    z-index: 1;
 }
 
 .bt-input-wrap input[type="text"] {
@@ -321,15 +325,16 @@
     background: #fff;
     padding-left: 2rem;
     padding-right: 0.75rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: inherit;
     color: inherit;
+    max-height: auto;
 }
 
 .bt-input-wrap input[type="text"]:focus,
 .bt-input-wrap input[type="text"]:focus-visible {
-    outline: 1px solid #157c68;
-    border-color: #157c68;
+    outline: 1px solid #157c68 !important;
+    border-color: #157c68 !important;
 }
 
 /* Info-knop naast het label */
@@ -581,14 +586,12 @@
     border: none;
     border-radius: 2rem;
     cursor: pointer;
-    transition: background 0.15s, transform 0.1s;
+    transition: box-shadow 0.2s ease;
 }
 
 .budget-download__btn:hover,
 .budget-download__btn:focus-visible {
-    background: #0e5a4c;
-    outline: 3px solid #0e5a4c;
-    outline-offset: 2px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.24);
 }
 
 .budget-download__btn:active { transform: scale(0.98); }
@@ -656,7 +659,8 @@ h3.accordion-title {
     padding: 1rem 0;
     cursor: pointer;
     font-family: inherit;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    text-transform: none;
     font-weight: 600;
     text-align: left;
     color: #000;
@@ -723,7 +727,7 @@ h3.accordion-title {
 }
 
 .accordion-content p {
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.6;
     color: #444;
     margin: 0;
