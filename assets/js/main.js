@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
     lightbox.setAttribute('aria-label', 'Meer informatie');
     lightbox.innerHTML =
         '<div class="bt-lightbox-content">' +
-            '<button type="button" class="bt-lightbox-close" aria-label="Sluiten">&times;</button>' +
+            '<a class="bt-lightbox-close brn" role="button" aria-label="Sluiten" tabindex="0">&times;</a>' +
             '<div class="bt-lightbox-body"></div>' +
         '</div>';
     document.body.appendChild(lightbox);

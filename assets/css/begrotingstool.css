@@ -2,6 +2,32 @@
    Begrotingstool — plugin styles
    ========================================================================== */
 
+:root {
+    --purple-light: #edeefd;
+    --nijmegen-color-zeegroen-600: #157c68;
+    --nijmegen-color-grijs-100: #f3f3f3;
+
+    --color-error: #c62828;
+    --color-cta: var(--nijmegen-color-zeegroen-600);
+
+    --textarea-height: 150px;
+    --input-height: 52px;
+    --input-border-color: #ccc;
+    --input-border-width: 1.5px;
+    --input-border-radius: 0.25rem;
+    --input-padding-inline: 0.75rem;
+    --input-background-color: #fff;
+    --input-border-color-active: var(--color-cta);
+    --input-color: #000;
+
+    --checkbox-label-width: 1.125rem;
+    --checkbox-label-color-active: var(--color-cta);
+
+    --btn-height: 3rem;
+
+    --p-margin: 1rem 0; 
+}
+
 /* ── Hulpklassen ───────────────────────────────────────────────────────── */
 
 .sr-only {
@@ -28,6 +54,7 @@
     background-attachment: fixed;
     padding: 4rem 0 0;
     min-height: 100dvh;
+    background-color: var(--purple-light);
 }
 
 /* ── Introductie ────────────────────────────────────────────────────────── */
@@ -37,6 +64,7 @@
     margin: 0 auto 4rem;
     padding: 0 1.5rem;
     text-align: center;
+    float: none;
 }
 
 .bt-logo {
@@ -377,9 +405,19 @@
     color: #666;
     line-height: 1;
     font-family: inherit;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 0;
+    display: inline-block;
 }
 
-.bt-lightbox-close:hover { color: #000; }
+.bt-lightbox-close:hover,
+.bt-lightbox-close:focus {
+    color: #000;
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+}
 
 .bt-lightbox-body {
     line-height: 1.6;
